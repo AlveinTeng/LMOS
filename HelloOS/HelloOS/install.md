@@ -6,7 +6,7 @@
 menuentry 'HelloOS' {
     insmod part_msdos
     insmod ext2
-    set root='hd0,msdos4' #注意boot目录挂载的分区，这是我机器上的情况
+    set root='hd0,msdos6' #注意boot目录挂载的分区，这是我机器上的情况
     multiboot2 /boot/HelloOS.bin
     boot
 }
